@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>Prince's Pearls</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+    
+    <div class="logo">
+        <img src="images/logo.png" alt="Prince's Pearls">
+    </div>
+
+    <div class="brand-name">
+        Prince's Pearls
+    </div>
+
+</div>
+
+    <nav class="nav" id="navMenu">
+      <a href="#">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#collections">Collections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search jewellery..." />
+        <i class="fas fa-search"></i>
+    </div>
+
+    <button class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tagline">Premium Jewellery Collection</p>
+      <h1>Shine With Timeless Elegance</h1>
+      <p>
+        Discover beautiful gold, diamond, ring, necklace and wedding jewellery crafted for every special moment.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn primary">Shop Now</a>
+        <a href="#categories" class="btn secondary">Explore</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" alt="Jewellery">
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="section-title">
+      <h2>Shop By Category</h2>
+      <p>Choose your favourite jewellery category</p>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80">
+        <h3>Rings</h3>
+      </div>
+
+      <div class="category-card">
+        <img src="images/necklace.png" alt="Necklace">
+        <h3>Necklaces</h3>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80">
+        <h3>Earrings</h3>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=500&q=80">
+        <h3>Bracelets</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <p>Most loved jewellery by our customers</p>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <div class="product-card" data-name="gold diamond ring">
+        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+          <h3>Diamond Gold Ring</h3>
+          <p>Elegant ring for special occasions.</p>
+          <h4>₹46,999</h4>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="gold necklace">
+        <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+          <h3>Royal Gold Necklace</h3>
+          <p>Premium necklace with royal finish.</p>
+          <h4>₹89,999</h4>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="diamond earrings">
+        <img src="https://images.unsplash.com/photo-1588444650733-d0767b753fc8?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+          <h3>Diamond Earrings</h3>
+          <p>Perfect for daily and party wear.</p>
+          <h4>₹32,499</h4>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="bridal jewellery set">
+        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+          <h3>Bridal Jewellery Set</h3>
+          <p>Complete wedding jewellery collection.</p>
+          <h4>₹1,25,999</h4>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="collection" id="collections">
+    <div class="collection-content">
+      <h2>Wedding Collection</h2>
+      <p>Make your big day unforgettable with our handcrafted bridal jewellery collection.</p>
+      <a href="#products" class="btn primary">View Collection</a>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Have questions? Send us a message</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Phone Number" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <h2>Prince's Pearls</h2>
+    <p>Luxury jewellery for every beautiful moment.</p>
+    <p>© 2025 Prince's Pearls. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
